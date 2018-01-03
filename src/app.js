@@ -12,6 +12,7 @@ import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
+console.log('testing')
 
 // log our visable expenses from store.
 const state = store.getState();
