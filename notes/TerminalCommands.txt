@@ -1,0 +1,26 @@
+server:
+live-server public
+
+npm: install
+
+yarn: install babel (creates package.json, and yarn.lock)
+    yarn add babel-preset-react
+    yarn add babel-preset-env
+
+Babel:
+(compiles jsx from file location and saves in designated location. Watch flag auto saves on change)
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+local server:
+live-server public
+
+
+local comands: in the package.json you can run any of these commands from terminal by:
+npm run dev-server
+
+exapmples
+ "scripts": {
+    "serve": "live-server public",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
